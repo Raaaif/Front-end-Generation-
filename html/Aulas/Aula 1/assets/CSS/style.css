@@ -15,13 +15,17 @@ header{
     text-align: center;
     font-size: 80px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #55bdbd;
+    color: #64c3cf;
 }
 
 .center1{
     text-align:left;
     font-size: 40px;
     color: #009191;
+}
+
+.may{
+    text-align: center;
 }
 
 .container{

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=>, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
     <header>
@@ -27,10 +27,16 @@
                 <h2 class="center">Mande uma mensagem</h2>
 
                 <label for="nome">Nome: </label><br>
-                <input type="text" id="nome" />
-                <br><br>
+                <input type="text" id="nome" onkeyup="validName()"/>
+                <div id="txtNome">
+                    
+                </div>
+                <br>
                 <label for="email">E-mail: </label><br>
-                <input type="email" id="email" />
+                <input type="email" id="email" onkeyup="validEmail()"/>
+                <div id="txtEmail">
+                    
+                </div>
                 <br>
                 <br>
                 <label for="assunto"> Assunto: </label><br>
@@ -38,7 +44,8 @@
                 <br>
                 <br>
 
-                <button>Enviar</button>
+                <button onclick="enviar()">Enviar</button>
+
             </form>
         </div>
         </div>
@@ -56,15 +63,16 @@
         <div class="alinha3">
         <h2 class="alinha4">Informações do autor</h2>
         <p>
-        Raif Sousa</p>
+        Raif Sousa &copy;</p>
         <p>Generation Brasil</p>
         <p>Desenvolvedor fullstack Java Jr
         </p>
             <a href="https://www.linkedin.com/in/raaaif" target="_blank"><img class="tm-social p-footer"
-                    src="./assets/images/linkedin.png" alt="icone linkedin" height="50px"></a>
+                    src="./images/linkedin.png" alt="icone linkedin" height="50px"></a>
             <a href="https://github.com/Raaaif" target="_blank"><img class="tm-social p-footer"
-                    src="./assets/images/github.png" alt="icone github" height="50px"></a>
+                    src="./images/github.png" alt="icone github" height="50px"></a>
             </div>
     </footer>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
