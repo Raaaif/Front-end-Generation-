@@ -10,6 +10,11 @@ por seletor: querySelector()
 let nome = document.getElementById("nome");
 let email = document.getElementById("email");
 let assunto = document.getElementById("assunto");
+let nomeOk = false
+let emailOk = false
+let assuntoOk = false
+let mapa = document.querySelector("#mapa")
+
 
 nome.style.width = "50%";
 email.style.width = "50%";
@@ -23,7 +28,7 @@ function validName(){
   else{
     txt.innerHTML = "Nome válido"
     txt.style.color = 'green'
-
+    nomeOk = true
   }
 }
 
@@ -36,5 +41,39 @@ function validEmail(){
   else{
     txtEmail.innerHTML = "E-mail válido!"
     txtEmail.style.color = "green"
+    emailOk = true
   }
 }
+
+function contCa(valor) {
+  quant = 240;
+  total = valor.length;
+  if(total <= quant) {
+      resto = quant - total;
+      document.getElementById("cont").innerHTML = resto;
+      assuntoOk = true
+  } else {
+      document.getElementById("assunto").value = valor.substr(0,quant);
+      
+  }    
+}
+
+function enviar(){
+  if(nomeOk == true && emailOk == true && assuntoOk == true){
+    alert('Formulário enviado com sucesso!')
+  }
+  else{
+    alert('Formulário preenchido incorretamente!')
+  }
+}
+
+function zoom(){
+  mapa.style.width = '800px'
+  mapa.style.height = '600px' 
+}
+
+function normal(){
+  mapa.style.width = '600px'
+  mapa.style.height = '450px' 
+}
+

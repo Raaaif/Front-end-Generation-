@@ -40,25 +40,32 @@
                 <br>
                 <br>
                 <label for="assunto"> Assunto: </label><br>
-                <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
-                <br>
-                <br>
 
+                <textarea name="assunto" id="assunto"  cols="60" rows="5" onkeyup="contCa(this.value)" ></textarea>
+                <span id="cont">240</span><br>    
+                <div id="cont">Utilize no máximo 240 caracteres</div>    
+                
+                <br>
+                <br>
                 <button onclick="enviar()">Enviar</button>
-
             </form>
         </div>
         </div>
         <div class="container">
             <div class="alinha5">
-        <h2 class="center">Endereço:</h2>
-            <br><br>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2693.360499020206!2d19.114738471247797!3d47.541312056535446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741db06f71e3a49%3A0xb6e9ec547bef84f4!2zSMOhemkgb3J2b3NpIHJlbmRlbMWR!5e0!3m2!1spt-PT!2sbr!4v1644436284185!5m2!1spt-PT!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <h2 class="center">Nosso endereço:</h2>
+            <p>Budapest, Opál u. 9, 1155 Hungria</p>
+            <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2693.360499020206!2d19.114738471247797!3d47.541312056535446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741db06f71e3a49%3A0xb6e9ec547bef84f4!2zSMOhemkgb3J2b3NpIHJlbmRlbMWR!5e0!3m2!1spt-PT!2sbr!4v1644436284185!5m2!1spt-PT!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" onmousemove="zoom()" onmouseout="normal()" loading="lazy"></iframe>
              </div>
             </div>
         </div>
-
-    
+        <div class="redes">
+        <p>Redes Sociais</p>
+        <a href="https://www.linkedin.com/in/raaaif" target="_blank"><img class="tm-social p-footer"
+            src="./images/linkedin.png" alt="icone linkedin" height="50px"></a>
+    <a href="https://github.com/Raaaif" target="_blank"><img class="tm-social p-footer"
+            src="./images/github.png" alt="icone github" height="50px"></a>
+        </div>
     <footer>
         <div class="alinha3">
         <h2 class="alinha4">Informações do autor</h2>
@@ -67,10 +74,7 @@
         <p>Generation Brasil</p>
         <p>Desenvolvedor fullstack Java Jr
         </p>
-            <a href="https://www.linkedin.com/in/raaaif" target="_blank"><img class="tm-social p-footer"
-                    src="./images/linkedin.png" alt="icone linkedin" height="50px"></a>
-            <a href="https://github.com/Raaaif" target="_blank"><img class="tm-social p-footer"
-                    src="./images/github.png" alt="icone github" height="50px"></a>
+
             </div>
     </footer>
     <script src="scripts/script.js"></script>
